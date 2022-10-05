@@ -7,9 +7,7 @@ class SampleTest {
     @Test
     void testFactInit(){
         var Sample = new Sample();
-
         Assertions.assertThatExceptionOfType(IllegalArgumentException.class).isThrownBy(() -> Sample.fact(-3));
-
     }
 
     @Test
